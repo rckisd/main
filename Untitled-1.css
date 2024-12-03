@@ -1,0 +1,148 @@
+body {
+    background-color: #E1F5FE;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+@font-face {
+    font-family:'Parkinsans Light' ;
+    src: url("C:\Users\aleks\OneDrive\Desktop\Parkinsans") format('truetype');
+}
+
+h1 {
+    font-family: 'Parkinsans Light', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    color: #2f3640;
+    
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0984e3;
+    margin: 10px auto 0;
+}
+
+span {
+    display: block;
+    text-align: center;
+    color: #718093;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.image-row {
+    display: block;
+    margin: 10px 0;
+}
+
+.image-row img {
+    width: 30%;
+    height: auto; /* сохраняются пропорции */
+    float: left; /* даём возможность тексту обтекать изображение */
+    margin: 0 10px 10px 0;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1rem;
+    color: #4b4b4b;
+    line-height: 1.8;
+    overflow: hidden;
+}
+
+p:first-letter {
+    font-size: 1.5rem;
+    font-style: 'Parkinsans Light';
+    font-weight: bold;
+    color: #2f3640;
+}
+
+p:nth-of-type(even) {
+    background-color: #f1f2f6;
+    padding: 10px;
+    border-left: 5px solid #0984e3;
+
+}
+
+strong {
+    color: #0984e3;
+    text-transform: uppercase;
+}
+
+a {
+    color: #0984e3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #74b9ff;
+}
+
+a:active {
+    color: #d63031;
+}
+
+ol {
+    margin: 20px auto;
+    max-width: 800px;
+    padding-left: 40px;
+    list-style: none;
+    counter-reset: custom-counter;
+}
+
+ol > li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    counter-increment: custom-counter;
+    position: relative;
+}
+
+ol > li::before {
+    content: counter(custom-counter) ". ";
+    color: #0984e3;
+    font-weight: bold;
+    position: absolute;
+    left: -25px;
+}
+
+ul.accessory-list {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul.accessory-list li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    max-width: 90%;
+    margin: 30px auto;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
